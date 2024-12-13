@@ -14,6 +14,10 @@ args = vars(ap.parse_args())
 image_path = args["image"]
 image = cv2.imread(image_path)
 
+if image == None:
+    print("Image not found")
+    exit()
+
 # If coordinates are passed in the arguments, crop the image
 if args["coordinates"]:
     coordinates = args["coordinates"]
