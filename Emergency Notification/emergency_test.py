@@ -51,7 +51,6 @@ for a in range(len(data["text"])):
                     presence_list[i][j] = True
 
 text = pytesseract.image_to_string(thres_img, lang=language)
-print(text)                    
           
 passed = False
                 
