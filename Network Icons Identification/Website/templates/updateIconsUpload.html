@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <form
+            method="POST"
+            action="/updateicons"
+            enctype="multipart/form-data"
+            style="display: flex; flex-direction: column; width: fit-content"
+        >
+            <!--Upload Image-->
+            Upload Template Screenshot:
+            <input type="file" name="file" id="file" />
+            <div style="display: flex; flex-direction: row">
+                <input
+                    type="checkbox"
+                    name="callServiceIconPresent"
+                    id="callServiceIconPresent"
+                />
+                Call Service Icon
+            </div>
+            <input type="submit" value="Upload Image" name="submit" />
+        </form>
+    </body>
+</html>

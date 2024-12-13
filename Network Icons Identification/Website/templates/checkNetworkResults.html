@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <b>Network Type</b>
+                </td>
+                <td>{{ networkType }}</td>
+                <td style="padding-left: 10px">
+                    <img
+                        src="{{ url_for('static', filename='thres_img_network.png') }}"
+                        style="height: 50px; width: auto"
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Network Strength</b>
+                </td>
+                <td>{{ networkStrength }}</td>
+                <td style="padding-left: 10px">
+                    <img
+                        src="{{ url_for('static', filename='signalStrength.png') }}"
+                        style="height: 50px; width: auto"
+                    />
+                </td>
+            </tr>
+            {% if callServiceType %}
+            <tr>
+                <td>
+                    <b>Call Service Type</b>
+                </td>
+                <td>{{ callServiceType }}</td>
+                <td style="padding-left: 10px">
+                    <img
+                        src="{{ url_for('static', filename='thres_img_call.png') }}"
+                        style="height: 50px; width: auto"
+                    />
+                </td>
+            </tr>
+            {% endif %}
+        </table>
+    </body>
+</html>
