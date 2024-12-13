@@ -91,6 +91,14 @@ Install using:
 pip install Flask
 ```
 
+## Start Server
+
+Make sure to start in the Website directory
+
+```
+python main.py
+```
+
 ## Upload template
 
 <img src="Resources/4.png" height="200">
